@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Baidhnath Sah | Creative Engineer & Athlete</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        purple: {
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            900: '#3b0764',
+                        },
+                        indigo: {
+                            500: '#6366f1',
+                            950: '#1e1b4b',
+                        },
+                        dark: '#020005',
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'glass': 'linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%)',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body {
+            background-color: #020005; /* Fallback */
+            color: #e2e8f0;
+            overflow-x: hidden;
+            cursor: default;
+            margin: 0;
+            padding: 0;
+        }
+        /* Ensure the root is transparent so fixed canvas background shows */
+        #root {
+            background: transparent;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020005;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b0764;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6b21a8;
+        }
+        .tracking-tighter-custom {
+            letter-spacing: -0.04em;
+        }
+        .glass-panel {
+            background: rgba(5, 0, 15, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+        .glass-card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px) scale(0.98);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #e9d5ff, #a855f7, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .btn-glow {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, transparent 60%);
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s ease;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .btn-glow:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        /* Glass Premium Highlight Styling */
+        .glass-premium-highlight {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(168, 85, 247, 0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            display: inline-block;
+        }
+        .glass-premium-highlight:hover {
+            border: 1px solid rgba(168, 85, 247, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(168, 85, 247, 0.4);
+            transform: scale(1.02);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="selection:bg-purple-500/30 selection:text-purple-200">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
+
+<script src="https://pl28645017.effectivegatecpm.com/67/8d/08/678d08e5d63ce0a6375b51b5551bc9f5.js"></script>
